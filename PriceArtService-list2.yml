@@ -1,0 +1,37 @@
+#Application Config
+application:
+listino: 2
+
+#==========================================================
+#= Actuator PArameters
+#==========================================================
+
+management :
+    info:
+        env:
+            enabled: true
+        git:
+            enabled: true
+            mode: full
+        endpoint :
+        health :
+            show-details : WHEN_AUTHORIZED
+        endpoints:
+            web:
+                exposure :
+                    include : health,info,metrics
+                    
+#==========================================================
+#= Actuator Info
+#==========================================================   
+
+info :
+    assistenza :
+        nome : Luca
+    nome :
+        nome-app : PriceArt Web Service
+    profilo : Github    
+                    
+                
+
+
